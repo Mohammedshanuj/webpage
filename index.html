@@ -3,6 +3,7 @@
 <html lang="zxx">
 
 <head>
+	<link rel="icon" href="images/b4.jpg" type="image/gif" sizes="16*16">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<title>Mohammed shanuj</title>
 
@@ -505,30 +506,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<h3 class="title">Contact</h3>
 						<div class="contact-us">
-							<!--<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
-						onload="if(submitted) {window.location='https://mohammedshanuj.github.io/webpage';}"></iframe>-->
-				<form id="submit-form" action=""  target="hidden_iframe" onsubmit="return validateForm(); ">
+							<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+						onload="if(submitted) {window.location.reload();}"></iframe>
+				<form id="submit-form">
 					<div class="col-md-6 col-sm-6 col-xs-6 styled-input">
-						<input type="text" name="entry.1559170097" placeholder="Name" required="">
+						<input type="text" name="name" placeholder="Name" required="">
 					</div>
 					<div class="col-md-6 col-sm-6 col-xs-6 styled-input">
-						<input type="text" name="entry.1222671940" placeholder="Last Name" required="">
-					</div>
-
-					<div class="col-md-6 col-sm-6 col-xs-6 styled-input">
-						<input type="email" name="entry.926236388" placeholder="Email" required="">
-
+						<input type="text" name="L_name" placeholder="Last Name" required="">
 					</div>
 
 					<div class="col-md-6 col-sm-6 col-xs-6 styled-input">
+						<input type="email" name="email" placeholder="Email" required="">
 
-						<input type="text" name="entry.1805955081" placeholder="phone" required="">
+					</div>
+
+					<div class="col-md-6 col-sm-6 col-xs-6 styled-input">
+
+						<input type="text" name="phone" placeholder="phone" required="">
 
 					</div>
 					<div class="clearfix"> </div>
 					<div class="styled-input">
 
-						<textarea name="entry.164250382" placeholder="Message" required=""></textarea>
+						<textarea name="message" placeholder="Message" required=""></textarea>
 					</div>
 					<div>
 						<div class="click">
@@ -728,7 +729,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:""https://docs.google.com/forms/u/0/d/e/1FAIpQLSc7K9ZDiNLMALUM5fzUzTJdgpSi0dysOfjkXKVhhw8jehMyUA/formResponse",
+                url:"https://script.google.com/macros/s/AKfycbzNY7Qex9eYtqH9ub7fjGIFka0Fr3ig7Cyg_S5MtQ/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
