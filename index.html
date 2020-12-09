@@ -39,6 +39,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--//stylesheets-->
 
 	<link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+	d>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -170,7 +174,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li>
 							<ul class="address-text">
 								<li><b>E-MAIL </b></li>
-								<li><a href="sanusanukv5@gmail.com">: sanusanukv5@gmail.com</a></li>
+								<li><a href="mailto:sanusanukv5@gmail.com">: sanusanukv5@gmail.com</a></li>
 							</ul>
 						</li>
 						<li>
@@ -377,7 +381,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="edu-right ">
 		<h6>2015</h6>
 		<h5>Secondary-Level-School</h5>
-		<p>MPS,A.R Nagar HSS</p>
+		<p>A.R Nagar HSS</p>
 		</div>
 		<div class="edu-right back-shadow clr-green">
 				<h6>2016-2018</h6>
@@ -400,7 +404,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="exp-left">
 		<h6></h6>
 		<h5>Web Designer</h5>
-		<p>Creating Dynamic and creative websites.In Modern and Unique....</p>
+		<p>Creating Dynamic and creative websites.In Modern and Unique styles.</p>
 		</div>
 		<div class="exp-left back-shadow clr-green">
 				<h6></h6>
@@ -501,28 +505,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<h3 class="title">Contact</h3>
 						<div class="contact-us">
-				<form action="#" method="post">
+							<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+						onload="if(submitted) {window.location='https://mohammedshanuj.github.io/webpage';}"></iframe>
+				<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc7K9ZDiNLMALUM5fzUzTJdgpSi0dysOfjkXKVhhw8jehMyUA/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
 					<div class="col-md-6 col-sm-6 col-xs-6 styled-input">
-						<input type="text" name="Name" placeholder="Name" required="">
+						<input type="text" name="entry.1559170097" placeholder="Name" required="">
 					</div>
 					<div class="col-md-6 col-sm-6 col-xs-6 styled-input">
-						<input type="text" name="Last Name" placeholder="Last Name" required="">
-					</div>
-
-					<div class="col-md-6 col-sm-6 col-xs-6 styled-input">
-						<input type="email" name="Email" placeholder="Email" required="">
-
+						<input type="text" name="entry.1222671940" placeholder="Last Name" required="">
 					</div>
 
 					<div class="col-md-6 col-sm-6 col-xs-6 styled-input">
+						<input type="email" name="entry.926236388" placeholder="Email" required="">
 
-						<input type="text" name="phone" placeholder="phone" required="">
+					</div>
+
+					<div class="col-md-6 col-sm-6 col-xs-6 styled-input">
+
+						<input type="text" name="entry.1805955081" placeholder="phone" required="">
 
 					</div>
 					<div class="clearfix"> </div>
 					<div class="styled-input">
 
-						<textarea name="Message" placeholder="Message" required=""></textarea>
+						<textarea name="entry.164250382" placeholder="Message" required=""></textarea>
 					</div>
 					<div>
 						<div class="click">
@@ -531,10 +537,73 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</form>
 			</div>
+			<script type="text/javascript">
+					function validateName() {
+							var name = document.getElementById('name').value;
+							if(name.length == 0) {
+							  alert("Name can't be blank") ;
+							  return false;
+				
+							}
+							if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+							  alert("Please enter your correct name") ;//Validation Message
+							  return false;
+							}
+							return true;
+						  }
+				
+						  function validatePhone() {
+							var phone = document.getElementById('phone').value;
+							if(phone.length == 0) {
+							  alert("Phone number can't be blank") ;//Validation Message
+							  return false;
+							}
+				
+							if(!phone.match(/^[0]?[789]\d{9}$/)) {
+							 alert("Please enter a correct phone number") ;//Validation Message
+							 return false;
+						   }
+				
+						   return true;
+				
+						 }
+				
+						 function validateEmail () {
+				
+						  var email = document.getElementById('email').value;
+						  if(email.length == 0) {
+							alert("Email can't be blank") ;//Validation Message
+							return false;
+				
+						  }
+				
+						  if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+							alert("Please enter a correct email address") ;//Validation Message
+							return false;
+				
+						  }
+				
+						  return true;
+				
+						}
+				
+				
+						function validateForm() {
+						  if (!validateName() || !validatePhone() || !validateEmail()) {
+				
+							alert("Form not submitted");//Validation Message
+							return false;
+						  }
+						  else {
+							submitted=true;
+							return true;
+						  }
+						}
+						</script>
 			<div class="clearfix"> </div>
 			<div class=" col-md-8 col-sm-8 col-xs-7 contact-map">
 				<div class="map-grid">
-					<iframe src="https://www.google.com/maps/place/Kolappuram,+Kerala/@11.0598367,75.9306884,16z/data=!3m1!4b1!4m5!3m4!1s0x3ba64da8a1914111:0x227ccf818033f8d5!8m2!3d11.0598102!4d75.9361629"></iframe>
+					<img src="https://www.google.com/maps/vt/data=wncNd_hz_gDWz_L3CpLiB43NMCaYG42tb1NGAzHvJIULGHgeZaoPsZT7j2aMCrbrpTeOix3WwaFa6o7mOOwJhwhdL_rnvmWUbWqsC4ALMjMUWsFA-gVa1tR8_7MDMs34PygGfZz4QeADIQEFxcwZP5hGjaA0Jo10Yt3wTsR7X-a7b2y64GbWfQXxgL8fR1Dd7x7GoEs4bmQ4YxdugPojFnEnjenVwlxBUzyMZ3iMmbKttb8eDZpYueplYoK8">
 
 				</div>
 			</div>
@@ -551,8 +620,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="footer_grid_left">
 					<h5>Email</h5>
-					<p><a href="sanusanukv5@gmail.com">sanusanukv5@gmail.com</a>
-					<span><a href="sanusanukv7@gmail.com">sanusanukv7@gmail.com</a></span></p>
+					<p><a href="mailto:sanusanukv5@gmail.com">sanusanukv5@gmail.com</a>
+					<span><a href="mailto:sanusanukv7@gmail.com">sanusanukv7@gmail.com</a></span></p>
 				</div>
 
 			</div>
