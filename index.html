@@ -43,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 <!-- navigation section -->
@@ -505,9 +505,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<h3 class="title">Contact</h3>
 						<div class="contact-us">
-							<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
-						onload="if(submitted) {window.location='https://mohammedshanuj.github.io/webpage';}"></iframe>
-				<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc7K9ZDiNLMALUM5fzUzTJdgpSi0dysOfjkXKVhhw8jehMyUA/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+							<!--<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+						onload="if(submitted) {window.location='https://mohammedshanuj.github.io/webpage';}"></iframe>-->
+				<form id="submit-form" action=""  target="hidden_iframe" onsubmit="return validateForm(); ">
 					<div class="col-md-6 col-sm-6 col-xs-6 styled-input">
 						<input type="text" name="entry.1559170097" placeholder="Name" required="">
 					</div>
@@ -537,7 +537,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</form>
 			</div>
-			<script type="text/javascript">
+			<!--<script type="text/javascript">
 					function validateName() {
 							var name = document.getElementById('name').value;
 							if(name.length == 0) {
@@ -599,7 +599,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							return true;
 						  }
 						}
-						</script>
+						</script>-->
 			<div class="clearfix"> </div>
 			<div class=" col-md-8 col-sm-8 col-xs-7 contact-map">
 				<div class="map-grid">
@@ -724,6 +724,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 	<!-- //here ends scrolling icon -->
+ <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:""https://docs.google.com/forms/u/0/d/e/1FAIpQLSc7K9ZDiNLMALUM5fzUzTJdgpSi0dysOfjkXKVhhw8jehMyUA/formResponse",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 
 </body>
 
